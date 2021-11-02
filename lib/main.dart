@@ -45,23 +45,15 @@ class _HomeAppState extends State<HomeApp> {
           alignment: Alignment.center,
           child: Container(
             child: Image.asset(
-              'assets/images/pic.jpg',
+              'assets/images/pic1.png',
               width: 300,
               height: 300,
             ),
           ),
         ),
      
-        Align(
-          alignment: Alignment.center,
-          child: Text(
-            "QPay",
-            style: TextStyle(
-                fontSize: 30,
-                fontWeight: (FontWeight.bold),
-                color: Colors.blue),
-          ),
-        ),
+     
+     
       ],
     );
   }
