@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyAppScreenTwo());
+void main() => runApp(const MyAppScreenTwo());
 
 class MyAppScreenTwo extends StatelessWidget {
+  const MyAppScreenTwo({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,10 +14,10 @@ class MyAppScreenTwo extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Screen Two'),
+          title: const Text('Screen Two'),
           centerTitle: true,
         ),
-        body: Center(
+        body: const Center(
           child: Text('Welcome to second page'),
         ),
       ),
