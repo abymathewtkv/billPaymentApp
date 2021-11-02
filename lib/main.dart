@@ -3,9 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bill_payment_app/screen_two.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: Scaffold(
+      home: const Scaffold(
         backgroundColor: Colors.white,
         body: HomeApp(),
       ),
@@ -22,6 +24,9 @@ class MyApp extends StatelessWidget {
 }
 
 class HomeApp extends StatefulWidget {
+  const HomeApp({Key? key}) : super(key: key);
+
+  @override
   _HomeAppState createState() => _HomeAppState();
 }
 
@@ -31,9 +36,9 @@ class _HomeAppState extends State<HomeApp> {
     super.initState();
 
     Timer(
-        Duration(seconds: 5),
+        const Duration(seconds: 5),
         () => Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => MyAppScreenTwo())));
+            MaterialPageRoute(builder: (context) => const MyAppScreenTwo())));
   }
 
   @override
@@ -43,17 +48,12 @@ class _HomeAppState extends State<HomeApp> {
       children: [
         Align(
           alignment: Alignment.center,
-          child: Container(
-            child: Image.asset(
-              'assets/images/pic1.png',
-              width: 300,
-              height: 300,
-            ),
+          child: Image.asset(
+            'assets/images/pic1.png',
+            width: 300,
+            height: 300,
           ),
         ),
-     
-     
-     
       ],
     );
   }
