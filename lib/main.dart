@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.white,
         body: HomeApp(),
       ),
     );
@@ -43,15 +43,15 @@ class _HomeAppState extends State<HomeApp> {
       children: [
         Align(
           alignment: Alignment.center,
-          child: Image.asset(
-            'assets/images/pic.jpg',
-            width: 200,
-            height: 150,
+          child: Container(
+            child: Image.asset(
+              'assets/images/pic.jpg',
+              width: 300,
+              height: 300,
+            ),
           ),
         ),
-        SizedBox(
-          height: 25,
-        ),
+     
         Align(
           alignment: Alignment.center,
           child: Text(
@@ -59,7 +59,7 @@ class _HomeAppState extends State<HomeApp> {
             style: TextStyle(
                 fontSize: 30,
                 fontWeight: (FontWeight.bold),
-                color: Colors.white),
+                color: Colors.blue),
           ),
         ),
       ],
