@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bill_payment_app/text_field_class.dart';
 
 void main() => runApp(const MyAppScreenTwo());
 
@@ -42,7 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-              
                   Padding(
                     padding: const EdgeInsets.only(
                         top: 0.0, right: 0.0, left: 0.0, bottom: 0.0),
@@ -54,7 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           width: 70.0,
                           decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage('assets/images/pic2.png'),fit: BoxFit.cover)),
+                                  image: AssetImage('assets/images/pic2.png'),
+                                  fit: BoxFit.cover)),
                         ),
                       ],
                     ),
@@ -89,24 +90,15 @@ class _MyHomePageState extends State<MyHomePage> {
                             topLeft: Radius.circular(15.0),
                             topRight: Radius.circular(15.0))),
                     child: Padding(
-                      padding: const EdgeInsets.only(top: 10.0,left: 10.0,right: 10.0,bottom: 0.0),
+                      padding: const EdgeInsets.only(
+                          top: 10.0, left: 10.0, right: 10.0, bottom: 0.0),
                       child: Container(
-                      
                         height: MediaQuery.of(context).size.height / 1.5,
                         width: MediaQuery.of(context).size.width,
-                        child: Container(
-                          height: 40.0,
-                          width: MediaQuery.of(context).size.width / 1.2,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFC41A3B)
-                          ),
-                          child: TextField(
-                             cursorColor: Color(0xFFFBE0E6),
-                            decoration: InputDecoration(
-                              hintText: "Name",hintStyle: TextStyle(color: Color(0xFFFBE0E6))
-                            ),
-                           
-                          ),
+                        child: Column(
+                          children: [
+                           TextFieldClass(name: "Name",icons: Icons.person,),
+                          ],
                         ),
                       ),
                     ),
