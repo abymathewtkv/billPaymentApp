@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
           constraints:
               BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
           child: Container(
-            color: Color(0xFFC41A38),
+            color: Color(0xFF03A9F4),
             height: MediaQuery.of(context).size.height,
             width: double.infinity,
             child: SingleChildScrollView(
@@ -47,15 +47,19 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding: const EdgeInsets.only(
                         top: 0.0, right: 0.0, left: 0.0, bottom: 0.0),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                          height: 70.0,
-                          width: 70.0,
-                          decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image: AssetImage('assets/images/pic2.png'),
-                                  fit: BoxFit.cover)),
+                          alignment: Alignment.center,
+                          child: Container(
+                            margin: EdgeInsets.only(top: 30),
+                          
+                            height: 70.0,
+                            width: 70.0,
+                            decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: AssetImage('assets/images/pic2.png'),
+                                    fit: BoxFit.cover)),
+                          ),
                         ),
                       ],
                     ),
@@ -63,22 +67,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     height: 8.0,
                   ),
-                  Text(
-                    'SignUp',
-                    style: TextStyle(
-                      fontSize: 28.0,
-                      color: Color(0xFFFBE0E6),
-                    ),
-                  ),
                   SizedBox(
                     height: 8.0,
-                  ),
-                  Text(
-                    'Welcome',
-                    style: TextStyle(
-                      fontSize: 14.0,
-                      color: Color(0xFFFBE0E6),
-                    ),
                   ),
                   SizedBox(
                     height: 8.0,
@@ -87,8 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: BoxDecoration(
                         color: Color(0xFFFBE0E6),
                         borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(15.0),
-                            topRight: Radius.circular(15.0))),
+                            topLeft: Radius.circular(20.0),
+                            topRight: Radius.circular(20.0),
+                            bottomRight: Radius.circular(20.0),
+                            bottomLeft: Radius.circular(20.0))),
                     child: Padding(
                       padding: const EdgeInsets.only(
                           top: 10.0, left: 10.0, right: 10.0, bottom: 0.0),
@@ -96,8 +88,27 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: MediaQuery.of(context).size.height / 1.5,
                         width: MediaQuery.of(context).size.width,
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                           TextFieldClass(name: "Name",icons: Icons.person,),
+                            TextFieldClass(
+                              name: "Name",
+                              icons: Icons.person,
+                            ),
+                            TextFieldClass(name: "Email", icons: Icons.email),
+                            TextFieldClass(
+                              name: "Account Number",
+                              icons: Icons.account_balance_rounded,
+                            ),
+                            TextFieldClass(
+                              name: "Address",
+                              icons: Icons.home,
+                            ),
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  primary: Color(0xFF03A9F4)),
+                              onPressed: () {},
+                              child: Text("Submit"),
+                            ),
                           ],
                         ),
                       ),
