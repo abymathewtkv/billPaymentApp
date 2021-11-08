@@ -17,7 +17,7 @@ class TextFieldClass extends StatelessWidget {
           Radius.circular(10),
         ),
         boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 5.0)],
-        color: Color(0xFFC41A3B),
+        color: Color(0xFF03A9F4),
       ),
       child: TextField(
         cursorColor: Color(0xFFFBE0E6),
