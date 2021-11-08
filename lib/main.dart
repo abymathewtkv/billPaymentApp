@@ -49,7 +49,7 @@ class _HomeAppState extends State<HomeApp> {
         Align(
           alignment: Alignment.center,
           child: Image.asset(
-            'assets/images/pic1.png',
+            'assets/images/logo.jpg',
             width: 300,
             height: 300,
           ),
