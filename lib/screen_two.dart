@@ -12,16 +12,19 @@ class MyAppScreenTwo extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Registration ",
       theme: ThemeData(
-        primaryColor: Color(0xFFC41A38),
-        primaryColorLight: Color(0xFFFBE0E6),
-        accentColor: Color(0xFF1B1F32),
+        primaryColor: const Color(0xFFC41A38),
+        primaryColorLight: const Color(0xFFFBE0E6),
+        colorScheme: ColorScheme.fromSwatch()
+            .copyWith(secondary: const Color(0xFF1B1F32)),
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
   @override
   // ignore: no_logic_in_create_state
   _MyHomePageState createState() => _MyHomePageState();
@@ -36,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
           constraints:
               BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
           child: Container(
-            color: Color(0xFF03A9F4),
+            color: const Color(0xFF03A9F4),
             height: MediaQuery.of(context).size.height,
             width: double.infinity,
             child: SingleChildScrollView(
@@ -51,11 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         Container(
                           alignment: Alignment.center,
                           child: Container(
-                            margin: EdgeInsets.only(top: 30),
-                          
+                            margin: const EdgeInsets.only(top: 30),
                             height: 70.0,
                             width: 70.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 image: DecorationImage(
                                     image: AssetImage('assets/images/pic2.png'),
                                     fit: BoxFit.cover)),
@@ -64,18 +66,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8.0,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8.0,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8.0,
                   ),
                   Container(
-                    decoration: BoxDecoration(
-                        color: Color(0xFFFBE0E6),
+                    decoration: const BoxDecoration(
+                        color: Colors.white,
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20.0),
                             topRight: Radius.circular(20.0),
@@ -84,30 +86,31 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Padding(
                       padding: const EdgeInsets.only(
                           top: 10.0, left: 10.0, right: 10.0, bottom: 0.0),
-                      child: Container(
+                      child: SizedBox(
                         height: MediaQuery.of(context).size.height / 1.5,
                         width: MediaQuery.of(context).size.width,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            TextFieldClass(
+                            const TextFieldClass(
                               name: "Name",
                               icons: Icons.person,
                             ),
-                            TextFieldClass(name: "Email", icons: Icons.email),
-                            TextFieldClass(
+                            const TextFieldClass(
+                                name: "Email", icons: Icons.email),
+                            const TextFieldClass(
                               name: "Account Number",
                               icons: Icons.account_balance_rounded,
                             ),
-                            TextFieldClass(
+                            const TextFieldClass(
                               name: "Address",
                               icons: Icons.home,
                             ),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: Color(0xFF03A9F4)),
+                                  primary: const Color(0xFF03A9F4)),
                               onPressed: () {},
-                              child: Text("Submit"),
+                              child: const Text("Submit"),
                             ),
                           ],
                         ),
