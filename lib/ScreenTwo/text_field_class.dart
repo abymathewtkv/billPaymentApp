@@ -23,7 +23,9 @@ class TextFieldClass extends StatelessWidget {
       ),
       child: TextField(
           cursorColor: const Color(0xFFFBE0E6),
-          style: const TextStyle(color: Color(0xFFFBE0E6),),
+          style: const TextStyle(
+            color: Color(0xFFFBE0E6),
+          ),
           decoration: InputDecoration(
             border: InputBorder.none,
             hintText: name,
