@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
           constraints:
               BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
           child: Container(
-            color: const Color(0xFF03A9F4),
+            color: const Color(0xFFE65100),
             height: MediaQuery.of(context).size.height,
             width: double.infinity,
             child: SingleChildScrollView(
@@ -63,7 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               width: 70.0,
                               decoration: const BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/images/pic2.png'),
+                                      image:
+                                          AssetImage('assets/images/logo2.png'),
                                       fit: BoxFit.cover)),
                             ),
                           ),
@@ -74,7 +75,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   const SizedBox(
                     height: 10.0,
                   ),
-                 
                   Container(
                     decoration: const BoxDecoration(
                         color: Colors.white,
@@ -92,6 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
+                             clickButton("Login"),
+                           
                             const TextFieldClass(
                               name: "Name",
                               icons: Icons.person,
@@ -106,12 +108,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               name: "Address",
                               icons: Icons.home,
                             ),
-                            ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                  primary: const Color(0xFF03A9F4)),
-                              onPressed: () {},
-                              child: const Text("Submit"),
-                            ),
+                            clickButton("Sign Up"),
+                            
                           ],
                         ),
                       ),
@@ -123,6 +121,16 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
+    );
+  }
+
+  ElevatedButton clickButton(String text) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+          primary: const Color(0xFFE65100),
+          padding: const EdgeInsets.symmetric(horizontal: 60.0)),
+      onPressed: () {},
+      child: Text(text),
     );
   }
 }
