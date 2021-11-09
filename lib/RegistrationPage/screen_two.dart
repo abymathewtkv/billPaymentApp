@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bill_payment_app/ScreenTwo/text_field_class.dart';
+import 'package:flutter_bill_payment_app/LoginPage/login_page.dart';
+import 'package:flutter_bill_payment_app/RegistrationPage/text_field_class.dart';
 
 void main() => runApp(const MyAppScreenTwo());
 
@@ -52,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       children: <Widget>[
                         Container(
-                          margin: EdgeInsets.only(top: 10),
+                          margin: const EdgeInsets.only(top: 10),
                           alignment: Alignment.center,
                           child: CircleAvatar(
                             radius: 45,
@@ -92,8 +93,17 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                             clickButton("Login"),
-                           
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  primary: const Color(0xFFE65100),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 60.0)),
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => LoginPage()));
+                              },
+                              child: Text('Login'),
+                            ),
                             const TextFieldClass(
                               name: "Name",
                               icons: Icons.person,
@@ -108,8 +118,14 @@ class _MyHomePageState extends State<MyHomePage> {
                               name: "Address",
                               icons: Icons.home,
                             ),
-                            clickButton("Sign Up"),
-                            
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  primary: const Color(0xFFE65100),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 60.0)),
+                              onPressed: () {},
+                              child: Text('Submit'),
+                            ),
                           ],
                         ),
                       ),
@@ -121,16 +137,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-    );
-  }
-
-  ElevatedButton clickButton(String text) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-          primary: const Color(0xFFE65100),
-          padding: const EdgeInsets.symmetric(horizontal: 60.0)),
-      onPressed: () {},
-      child: Text(text),
     );
   }
 }

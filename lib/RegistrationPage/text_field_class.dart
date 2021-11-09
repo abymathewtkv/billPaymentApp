@@ -33,7 +33,7 @@ class TextFieldClass extends StatelessWidget {
                 color: Color(0xFFFBE0E6), fontStyle: FontStyle.italic),
             icon: Icon(
               icons,
-              color:  Colors.white,
+              color: Colors.white,
             ),
           )),
     );

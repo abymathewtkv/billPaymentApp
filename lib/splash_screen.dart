@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'ScreenTwo/screen_two.dart';
+import 'RegistrationPage/screen_two.dart';
 
 class HomeApp extends StatefulWidget {
   const HomeApp({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class _HomeAppState extends State<HomeApp> {
     super.initState();
 
     Timer(
-        const Duration(seconds: 5),
+        const Duration(seconds: 10),
         () => Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) => const MyAppScreenTwo())));
   }
