@@ -37,7 +37,7 @@ class _HomeAppState extends State<HomeApp> {
                 backgroundColor: Colors.white,
                 radius: 85,
                 child: Image(
-                  image: AssetImage('assets/images/logo2.png'),
+                  image: AssetImage('assets/images/logo3.png'),
                   height: 110.0,
                   width: 110.0,
                   fit: BoxFit.cover,
