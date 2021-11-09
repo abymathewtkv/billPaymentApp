@@ -27,7 +27,7 @@ class _HomeAppState extends State<HomeApp> {
     return Stack(
       children: <Widget>[
         Container(
-          color: const Color(0xFF03A9F4),
+          color: const Color(0xFFE65100),
         ),
         Center(
           child: Column(
