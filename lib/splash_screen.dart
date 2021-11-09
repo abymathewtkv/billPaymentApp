@@ -37,7 +37,7 @@ class _HomeAppState extends State<HomeApp> {
                 backgroundColor: Colors.white,
                 radius: 85,
                 child: Image(
-                  image: AssetImage('assets/images/logo.jpg'),
+                  image: AssetImage('assets/images/logo2.png'),
                   height: 110.0,
                   width: 110.0,
                   fit: BoxFit.cover,
@@ -46,9 +46,9 @@ class _HomeAppState extends State<HomeApp> {
               Padding(
                 padding: EdgeInsets.all(16.0),
                 child: Text(
-                  'QuickPAY',
+                  'Loading...',
                   style: TextStyle(
-                      fontSize: 32.0,
+                      fontSize: 30.0,
                       color: Colors.white,
                       fontWeight: (FontWeight.bold)),
                 ),
