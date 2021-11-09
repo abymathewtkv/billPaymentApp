@@ -52,29 +52,29 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       children: <Widget>[
                         Container(
+                          margin: EdgeInsets.only(top: 10),
                           alignment: Alignment.center,
-                          child: Container(
-                            margin: const EdgeInsets.only(top: 30),
-                            height: 70.0,
-                            width: 70.0,
-                            decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                    image: AssetImage('assets/images/pic2.png'),
-                                    fit: BoxFit.cover)),
+                          child: CircleAvatar(
+                            radius: 45,
+                            backgroundColor: Colors.white,
+                            child: Container(
+                              margin: const EdgeInsets.all(15.0),
+                              height: 70.0,
+                              width: 70.0,
+                              decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage('assets/images/pic2.png'),
+                                      fit: BoxFit.cover)),
+                            ),
                           ),
                         ),
                       ],
                     ),
                   ),
                   const SizedBox(
-                    height: 8.0,
+                    height: 10.0,
                   ),
-                  const SizedBox(
-                    height: 8.0,
-                  ),
-                  const SizedBox(
-                    height: 8.0,
-                  ),
+                 
                   Container(
                     decoration: const BoxDecoration(
                         color: Colors.white,
