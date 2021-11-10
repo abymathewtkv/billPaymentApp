@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
           constraints:
               BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
           child: Container(
-            color: const Color(0xFFE65100),
+            color:  Colors.lightBlueAccent,
             height: MediaQuery.of(context).size.height,
             width: double.infinity,
             child: SingleChildScrollView(
@@ -70,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                         ),
+                        
                       ],
                     ),
                   ),
@@ -93,9 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            ElevatedButton(
+                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: const Color(0xFFE65100),
+                                  primary: const Color(0xFFFFA726),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 60.0)),
                               onPressed: () {
@@ -104,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               },
                               child: Text('Login'),
                             ),
+                           
                             const TextFieldClass(
                               name: "Name",
                               icons: Icons.person,
@@ -120,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: const Color(0xFFE65100),
+                                  primary:  Color(0xFFFFA726),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 60.0)),
                               onPressed: () {},

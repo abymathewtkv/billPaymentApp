@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class InputField extends StatefulWidget {
   Icon fieldIcon;
   String hintText;
+  
 
   InputField(this.fieldIcon, this.hintText, {Key? key}) : super(key: key);
 
@@ -12,17 +13,18 @@ class InputField extends StatefulWidget {
 }
 
 class _InputFieldState extends State<InputField> {
-  final _text = TextEditingController();
-  final bool _validate = false;
+
+  
 
   @override
   Widget build(BuildContext context) {
+ 
     return SizedBox(
       width: 250,
       child: Material(
         elevation: 5.0,
-        borderRadius: const BorderRadius.all(Radius.circular(10.0)),
-        color: const Color(0xFFE65100),
+        borderRadius: const BorderRadius.all(Radius.circular(10.0),),
+        color: const Color(0xFFFFA726),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -35,7 +37,7 @@ class _InputFieldState extends State<InputField> {
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                     topRight: Radius.circular(10.0),
-                    bottomRight: Radius.circular(10.0)),
+                    bottomRight: Radius.circular(10.0),),
               ),
               width: 200,
               height: 60,
@@ -43,11 +45,14 @@ class _InputFieldState extends State<InputField> {
                 padding: const EdgeInsets.all(8.0),
                 child: Form(
                   child: TextField(
+                    
+                    
+                  
                     //TestField
-                    controller: _text,
+                    
 
                     decoration: InputDecoration(
-                      errorText: _validate ? "Username" : null,
+                   
                       border: InputBorder.none,
                       hintText: widget.hintText,
                       fillColor: Colors.white,

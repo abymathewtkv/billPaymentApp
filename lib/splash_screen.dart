@@ -27,7 +27,7 @@ class _HomeAppState extends State<HomeApp> {
     return Stack(
       children: <Widget>[
         Container(
-          color: const Color(0xFFE65100),
+          color:  Colors.lightBlueAccent,
         ),
         Center(
           child: Column(
@@ -35,13 +35,16 @@ class _HomeAppState extends State<HomeApp> {
             children: const <Widget>[
               CircleAvatar(
                 backgroundColor: Colors.white,
-                radius: 85,
+                radius: 60,
                 child: Image(
                   image: AssetImage('assets/images/logo3.png'),
                   height: 110.0,
                   width: 110.0,
                   fit: BoxFit.cover,
                 ),
+              ),
+              SizedBox(
+                height: 60,
               ),
               Padding(
                 padding: EdgeInsets.all(16.0),

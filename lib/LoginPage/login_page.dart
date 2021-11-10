@@ -7,12 +7,14 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MyLoginPage();
+    return  MyLoginPage();
   }
 }
 
 class MyLoginPage extends StatelessWidget {
-  const MyLoginPage({Key? key}) : super(key: key);
+  MyLoginPage({Key? key}) : super(key: key);
+    
+   
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class MyLoginPage extends StatelessWidget {
               widthFactor: 0.4,
               child: Material(
                 borderRadius: BorderRadius.all(Radius.circular(200.0)),
-                color: Color(0xFFE65100),
+                color: Color(0xFFFFA726),
                 child: SizedBox(
                   width: 400,
                   height: 400,
@@ -57,6 +59,7 @@ class MyLoginPage extends StatelessWidget {
                         )),
                     Form(
                       child: InputField(
+                        
                           //Calling inputField  class
 
                           const Icon(
@@ -71,6 +74,7 @@ class MyLoginPage extends StatelessWidget {
                             Icons.lock,
                             color: Colors.white,
                           ),
+                          
                           "Password"),
                     ),
                     SizedBox(
@@ -80,7 +84,7 @@ class MyLoginPage extends StatelessWidget {
                         //Raised Button
                         onPressed: () {},
 
-                        color: const Color(0xFFE65100),
+                        color: const Color(0xFFFFA726),
                         textColor: Colors.white,
                         child: const Text(
                           "Login",
