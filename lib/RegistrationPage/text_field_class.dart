@@ -19,12 +19,12 @@ class TextFieldClass extends StatelessWidget {
           Radius.circular(10),
         ),
         boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 5.0)],
-        color: Colors.lightBlueAccent,
+        color: Color(0xFF9575CD),
       ),
       child: TextField(
           cursorColor: const Color(0xFFFBE0E6),
           style: const TextStyle(
-            color: Color(0xFFFBE0E6),
+            color: Color(0xFF9575CD),
           ),
           decoration: InputDecoration(
             border: InputBorder.none,

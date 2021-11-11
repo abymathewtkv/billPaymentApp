@@ -22,7 +22,7 @@ class MyLoginPage extends StatelessWidget {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        color: Colors.lightBlueAccent,
+        color: Color(0xFF9575CD),
         child: Stack(
           children: <Widget>[
             const Align(
@@ -31,7 +31,7 @@ class MyLoginPage extends StatelessWidget {
               widthFactor: 0.4,
               child: Material(
                 borderRadius: BorderRadius.all(Radius.circular(200.0)),
-                color: Color(0xFFFFA726),
+                color: Colors.white,
                 child: SizedBox(
                   width: 400,
                   height: 400,
@@ -84,7 +84,7 @@ class MyLoginPage extends StatelessWidget {
                         //Raised Button
                         onPressed: () {},
 
-                        color: const Color(0xFFFFA726),
+                        color: const Color(0xFFFFB74D),
                         textColor: Colors.white,
                         child: const Text(
                           "Login",

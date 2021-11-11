@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
           constraints:
               BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
           child: Container(
-            color:  Colors.lightBlueAccent,
+            color:  Color(0xFF9575CD),
             height: MediaQuery.of(context).size.height,
             width: double.infinity,
             child: SingleChildScrollView(
@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: [
                              ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: const Color(0xFFFFA726),
+                                  primary: const Color(0xFF9575CD),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 60.0)),
                               onPressed: () {
@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary:  Color(0xFFFFA726),
+                                  primary:  Color(0xFF9575CD),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 60.0)),
                               onPressed: () {},
