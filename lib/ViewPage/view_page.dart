@@ -58,7 +58,7 @@ class ViewPage extends StatelessWidget {
                       ),
                       DataCell(
                         Text(
-                          '30GB',
+                          'Jonathan',
                           style: TextStyle(
                             color: Colors.white,
                           ),
@@ -69,11 +69,11 @@ class ViewPage extends StatelessWidget {
                   DataRow(
                     cells: <DataCell>[
                       DataCell(
-                        Icon(FontAwesomeIcons.hooli),
+                        Icon(FontAwesomeIcons.mailBulk),
                       ),
                       DataCell(
                         Text(
-                          '50',
+                          'jonnathan@gmail.com',
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -82,11 +82,11 @@ class ViewPage extends StatelessWidget {
                   DataRow(
                     cells: <DataCell>[
                       DataCell(
-                        Icon(FontAwesomeIcons.hooli),
+                        Icon(FontAwesomeIcons.piggyBank),
                       ),
                       DataCell(
                         Text(
-                          '50',
+                          '8377743233',
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -95,11 +95,11 @@ class ViewPage extends StatelessWidget {
                   DataRow(
                     cells: <DataCell>[
                       DataCell(
-                        Icon(FontAwesomeIcons.hooli),
+                        Icon(FontAwesomeIcons.home),
                       ),
                       DataCell(
                         Text(
-                          '50',
+                          'codium pvt ltd, bangkok, Thailand',
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -113,7 +113,7 @@ class ViewPage extends StatelessWidget {
               child: RaisedButton(
                   color: new Color(0xffffffff),
                   child: Text(
-                    'Choose Plan',
+                    'Pay here',
                     style: TextStyle(
                       color: new Color(0xff6200ee),
                     ),
