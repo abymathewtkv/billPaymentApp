@@ -1,4 +1,4 @@
-# Basic Bill Payment Application
+# Basic Bill Payment Application UI
 
 #### UI consists of four pages  
 
