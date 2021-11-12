@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bill_payment_app/ViewPage/view_page.dart';
 
 import 'input_field.dart';
 
@@ -82,7 +83,9 @@ class MyLoginPage extends StatelessWidget {
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         //Raised Button
-                        onPressed: () {},
+                        onPressed: () {
+                          gotoViewPage(context);
+                        },
 
                         color: const Color(0xFFFFB74D),
                         textColor: Colors.white,
@@ -105,5 +108,8 @@ class MyLoginPage extends StatelessWidget {
         ),
       ),
     );
+  }
+  void gotoViewPage(BuildContext context){
+    Navigator.push(context, MaterialPageRoute(builder:(context)=> ViewPage()));
   }
 }
