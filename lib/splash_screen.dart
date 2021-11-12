@@ -17,7 +17,7 @@ class _HomeAppState extends State<HomeApp> {
     super.initState();
 
     Timer(
-        const Duration(seconds: 10),
+        const Duration(seconds: 5),
         () => Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) => const MyAppScreenTwo())));
   }
@@ -44,7 +44,7 @@ class _HomeAppState extends State<HomeApp> {
                 ),
               ),
               SizedBox(
-                height: 60,
+                height: 100,
               ),
               Padding(
                 padding: EdgeInsets.all(16.0),
