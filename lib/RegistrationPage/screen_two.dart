@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bill_payment_app/LoginPage/login_page.dart';
 import 'package:flutter_bill_payment_app/RegistrationPage/text_field_class.dart';
+import 'package:flutter_bill_payment_app/ViewPage/view_page.dart';
 
 void main() => runApp(const MyAppScreenTwo());
 
@@ -125,7 +126,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                   primary:  Color(0xFF9575CD),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 60.0)),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => ViewPage()));
+                              },
                               child: Text('Submit'),
                             ),
                           ],
