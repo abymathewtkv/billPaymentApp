@@ -10,7 +10,7 @@
 
 #### Flutter 2+(Developed  in flutter 2.5.3 stable)
 #### with windows 21H1 and tested on windows10 with Flutter 2.5.3
-#### There shouldn't be any problem  with other UNIX based operating System.
+#### There shouldn't be any problem  with other UNIX based operating Systems.
 
   
 ## Installation
